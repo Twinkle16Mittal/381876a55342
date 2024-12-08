@@ -11,7 +11,6 @@ jobs:
     env:
       GREETING: "Hello"
       TARGET: "World"
-      MESSAGE: "${{ env.GREETING }}, ${{ env.TARGET }}!"
     steps:
       - name: Display Message
-        run: echo "$MESSAGE"
+        run: echo "${{ env.GREETING }}, ${{ env.TARGET }}!"
